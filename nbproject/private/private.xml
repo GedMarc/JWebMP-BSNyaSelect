@@ -3,5 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="JWebswing Static"/>
+        <group name="JWebSwing">
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/src/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelectItem.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/src/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelect.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/src/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelectReferencePool.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/test/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelectTest.java</file>
+            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/src/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelectAngularModule.java</file>
+        </group>
     </open-files>
 </project-private>

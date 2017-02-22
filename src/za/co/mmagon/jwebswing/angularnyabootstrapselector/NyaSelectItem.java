@@ -1,6 +1,7 @@
 package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 
 import za.co.mmagon.jwebswing.base.html.*;
+import za.co.mmagon.jwebswing.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
 
 /**
  *
@@ -105,6 +106,7 @@ public class NyaSelectItem extends ListItem implements NyaSelectChildren
         if (!isConfigured())
         {
             addClass("nya-bs-option");
+            addClass(BSComponentDropDownOptions.Dropdown_Item);
 
             Link link = new Link();
             add(link);

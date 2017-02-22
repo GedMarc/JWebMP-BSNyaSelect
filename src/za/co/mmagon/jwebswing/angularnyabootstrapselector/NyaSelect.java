@@ -17,10 +17,12 @@
 package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 
 import za.co.mmagon.jwebswing.base.angular.AngularAttributes;
+import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
 import za.co.mmagon.jwebswing.base.html.List;
-import za.co.mmagon.jwebswing.components.bootstrap.forms.BSFormChildren;
-import za.co.mmagon.jwebswing.components.bootstrap.forms.groups.BSFormGroupChildren;
-import za.co.mmagon.jwebswing.components.bootstrap.forms.groups.sets.BSFormSetChildren;
+import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
+import za.co.mmagon.jwebswing.plugins.bootstrap.forms.BSFormChildren;
+import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSFormGroupChildren;
+import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
 
 /**
  * An implementation of
@@ -43,18 +45,15 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
     {
         super(true);
         getAngularModules().add(new NyaSelectAngularModule(this));
-        setLoadAngular(true);
-        setBootstrapRequired(true);
-
         addClass("nya-bs-select");
 
         addAttribute(AngularAttributes.ngModel, bindingVariableName);
-
+        BootstrapPageConfigurator.setBootstrapRequired(this, true);
+        AngularPageConfigurator.setAngularRequired(this, true);
     }
 
     /**
-     * Sets this select option as multiple
-     * Binds as an array, make the dto object a List
+     * Sets this select option as multiple Binds as an array, make the dto object a List
      *
      * @param multiple
      *
@@ -174,8 +173,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
     }
 
     /**
-     * Sets this select option as multiple
-     * Binds as an array, make the dto object a List
+     * Sets this select option as multiple Binds as an array, make the dto object a List
      *
      * @param actionsBox
      *

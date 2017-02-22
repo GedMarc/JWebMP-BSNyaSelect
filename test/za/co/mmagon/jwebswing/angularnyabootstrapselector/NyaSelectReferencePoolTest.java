@@ -28,8 +28,6 @@ public class NyaSelectReferencePoolTest
     {
         Page p = new Page();
         p.getOptions().setDynamicRender(false);
-        p.getOptions().setAngularEnabled(true);
-
         NyaSelect nya = new NyaSelect("test.me");
 
         p.getBody().add(nya);
