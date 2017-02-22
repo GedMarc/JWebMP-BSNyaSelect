@@ -2,7 +2,6 @@ package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 
 /**
  *
@@ -18,16 +17,7 @@ public class NyaSelectAngularModule extends AngularModuleBase
     public NyaSelectAngularModule(ComponentHierarchyBase page)
     {
         super("nya.bootstrap.select");
-        if (BootstrapPageConfigurator.isBootstrap4())
-        {
-            page.getJavascriptReferences().add(NyaSelectReferencePool.Nya4Reference.getJavaScriptReference());
-            page.getCssReferences().add(NyaSelectReferencePool.Nya4Reference.getCssReference());
-        }
-        else
-        {
-            page.getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
-            page.getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
-        }
+
     }
 
     @Override

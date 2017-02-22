@@ -19,6 +19,7 @@ package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 import za.co.mmagon.jwebswing.base.angular.AngularAttributes;
 import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
 import za.co.mmagon.jwebswing.base.html.List;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.BSFormChildren;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSFormGroupChildren;
@@ -31,10 +32,21 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChild
  * @since 17 Jan 2017
  * @version 1.0
  */
+@ComponentInformation(name = "Bootstrap Nya Select", description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
+        url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelectn/wiki")
 public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect> implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
 {
 
     private static final long serialVersionUID = 1L;
+
+    /**
+     * Constructs a new instance
+     *
+     */
+    public NyaSelect()
+    {
+        this("data.nya");
+    }
 
     /**
      * Constructs a new instance
@@ -44,9 +56,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
     public NyaSelect(String bindingVariableName)
     {
         super(true);
-        getAngularModules().add(new NyaSelectAngularModule(this));
         addClass("nya-bs-select");
-
         addAttribute(AngularAttributes.ngModel, bindingVariableName);
         BootstrapPageConfigurator.setBootstrapRequired(this, true);
         AngularPageConfigurator.setAngularRequired(this, true);
