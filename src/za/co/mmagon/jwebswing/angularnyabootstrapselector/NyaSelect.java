@@ -33,7 +33,7 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChild
  * @version 1.0
  */
 @ComponentInformation(name = "Bootstrap Nya Select", description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
-        url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelectn/wiki")
+        url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
 public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect> implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
 {
 
