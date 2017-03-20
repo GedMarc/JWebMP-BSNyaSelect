@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -24,6 +24,7 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.BSFormChildren;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSFormGroupChildren;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
+import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * An implementation of
@@ -33,7 +34,7 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChild
  * @version 1.0
  */
 @ComponentInformation(name = "Bootstrap Nya Select", description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
-        url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
+                      url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
 public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect> implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
 {
 
@@ -41,7 +42,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 
     /**
      * Constructs a new instance
-     *
+     * <p>
      */
     public NyaSelect()
     {
@@ -58,6 +59,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         super(true);
         addClass("nya-bs-select");
         addAttribute(AngularAttributes.ngModel, bindingVariableName);
+        JQueryPageConfigurator.setRequired(this, true);
         BootstrapPageConfigurator.setBootstrapRequired(this, true);
         AngularPageConfigurator.setAngularRequired(this, true);
     }
