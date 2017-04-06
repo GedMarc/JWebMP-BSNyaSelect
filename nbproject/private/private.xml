@@ -5,8 +5,6 @@
         <group name="JWebswing Static"/>
         <group name="JWebSwing"/>
         <group name="JWebSwing Plugins"/>
-        <group name="JWebSwing Website">
-            <file>file:/C:/AESoft/Programs/JWebSwingPlugins/BSNyaSelect/src/za/co/mmagon/jwebswing/angularnyabootstrapselector/NyaSelect.java</file>
-        </group>
+        <group name="JWebSwing Website"/>
     </open-files>
 </project-private>
