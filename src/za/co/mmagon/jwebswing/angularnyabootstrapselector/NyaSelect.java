@@ -60,8 +60,8 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         addClass("nya-bs-select");
         addAttribute(AngularAttributes.ngModel, bindingVariableName);
         JQueryPageConfigurator.setRequired(this, true);
-        BootstrapPageConfigurator.setBootstrapRequired(this, true);
-        AngularPageConfigurator.setRequired(this, true);
+	    BootstrapPageConfigurator.setRequired(this, true);
+	    AngularPageConfigurator.setRequired(this, true);
     }
 
     /**
