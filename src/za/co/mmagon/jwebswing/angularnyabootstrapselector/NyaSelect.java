@@ -79,7 +79,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("multiple");
+            getAttributes().remove("multiple");
         }
         return this;
     }
@@ -99,7 +99,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("live-search");
+            getAttributes().remove("live-search");
         }
         return this;
     }
@@ -119,7 +119,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("required");
+            getAttributes().remove("required");
         }
         return this;
     }
@@ -139,7 +139,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("disabled");
+            getAttributes().remove("disabled");
         }
         return this;
     }
@@ -159,7 +159,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("size");
+            getAttributes().remove("size");
         }
         return this;
     }
@@ -179,7 +179,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("title");
+            getAttributes().remove("title");
         }
         return this;
     }
@@ -199,7 +199,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("actions-box");
+            getAttributes().remove("actions-box");
         }
         return this;
     }
@@ -219,7 +219,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("selected-text-format");
+            getAttributes().remove("selected-text-format");
         }
         return this;
     }
@@ -239,7 +239,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("selected-text-format");
+            getAttributes().remove("selected-text-format");
         }
         return this;
     }
@@ -282,7 +282,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
         }
         else
         {
-            getAttributesCustom().remove("selected-text-format");
+            getAttributes().remove("selected-text-format");
         }
         return this;
     }
