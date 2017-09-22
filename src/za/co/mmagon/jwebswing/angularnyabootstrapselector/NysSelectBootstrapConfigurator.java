@@ -22,58 +22,55 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 
 /**
- *
  * @author GedMarc
  * @since 22 Feb 2017
- *
  */
 @PluginInformation(pluginName = "Nya Bootstrap Select",
-                   pluginUniqueName = "bootstrap-nya-select",
-                   pluginDescription = "nya-bootstrap-select helps you build select element or dropdown with Bootstrap style and an angular way. Generate options with collection, get user select value with model. Define various styles of the select options as you wish. ",
-                   pluginVersion = "BS3.3.7 / 4a6",
-                   pluginDependancyUniqueIDs = "jquery,bootstrap,angular",
-                   pluginCategories = "bootstrap,web ui,ui,framework,select",
-                   pluginSubtitle = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect",
-                   pluginSourceUrl = "https://github.com/lordfriend/nya-bootstrap-select",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki",
-                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BSNyaSelect.jar/download",
-                   pluginIconUrl = "bower_components/nya-bootstrap-select/logo.png",
-                   pluginIconImageUrl = "bower_components/nya-bootstrap-select/logo.png",
-                   pluginLastUpdatedDate = "2017/03/04",
-                   pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/"
+		pluginUniqueName = "bootstrap-nya-select",
+		pluginDescription = "nya-bootstrap-select helps you build select element or dropdown with Bootstrap style and an angular way. Generate options with collection, get user select value with model. Define various styles of the select options as you wish. ",
+		pluginVersion = "BS3.3.7 / 4a6",
+		pluginDependancyUniqueIDs = "jquery,bootstrap,angular",
+		pluginCategories = "bootstrap,web ui,ui,framework,select",
+		pluginSubtitle = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect",
+		pluginSourceUrl = "https://github.com/lordfriend/nya-bootstrap-select",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BSNyaSelect.jar/download",
+		pluginIconUrl = "bower_components/nya-bootstrap-select/logo.png",
+		pluginIconImageUrl = "bower_components/nya-bootstrap-select/logo.png",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/"
 )
 public class NysSelectBootstrapConfigurator extends PageConfigurator
 {
-
-    public final String NyaSelectEnabled = "nyaselect-enabled";
-
-    private static final long serialVersionUID = 1L;
-
-    public NysSelectBootstrapConfigurator()
-    {
-        setSortOrder(160);
-    }
-
-    @Override
-    public Page configure(Page page)
-    {
-        if (!page.isConfigured())
-        {
-            page.getAngular().getAngularModules().add(new NyaSelectAngularModule(page.getBody()));
-
-            if (BootstrapPageConfigurator.isBootstrap4())
-            {
-                page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.Nya4Reference.getJavaScriptReference());
-                page.getBody().getCssReferences().add(NyaSelectReferencePool.Nya4Reference.getCssReference());
-            }
-            else
-            {
-                page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
-                page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
-            }
-        }
-
-        return page;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	public final String NyaSelectEnabled = "nyaselect-enabled";
+	
+	public NysSelectBootstrapConfigurator()
+	{
+		setSortOrder(160);
+	}
+	
+	@Override
+	public Page configure(Page page)
+	{
+		if (!page.isConfigured())
+		{
+			page.getAngular().getAngularModules().add(new NyaSelectAngularModule(page.getBody()));
+			
+			if (BootstrapPageConfigurator.isBootstrap4())
+			{
+				page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.Nya4Reference.getJavaScriptReference());
+				page.getBody().getCssReferences().add(NyaSelectReferencePool.Nya4Reference.getCssReference());
+			}
+			else
+			{
+				page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
+				page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
+			}
+		}
+		
+		return page;
+	}
 }

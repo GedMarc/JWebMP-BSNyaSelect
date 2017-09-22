@@ -28,79 +28,79 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 public enum NyaSelectReferencePool implements ReferencePool
 {
-    NyaReference(new JavascriptReference("nya", 1.0, "bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"),
-            new CSSReference("nya", 1.0, "bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css")),
-    Nya4Reference(new JavascriptReference("nya4", 1.0, "bower_components/nya-bootstrap4-select/dist/js/nya-bs-select.js"),
-            new CSSReference("nya4", 1.0, "bower_components/nya-bootstrap4-select/dist/css/nya-bs-select.css"));
-    /**
-     * The actual javascript
-     */
-    private JavascriptReference javaScriptReference;
-    /**
-     * The actual css reference
-     */
-    private CSSReference cssReference;
-
-    /**
-     * Constructs a reference pool
-     */
-    private NyaSelectReferencePool()
-    {
-    }
-
-    /**
-     * Constructs a new reference pool
-     *
-     * @param javaScriptReference
-     * @param cssReference
-     */
-    private NyaSelectReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-        this.cssReference = cssReference;
-    }
-
-    /**
-     * Returns the javascript reference
-     *
-     * @return
-     */
-    @Override
-    public JavascriptReference getJavaScriptReference()
-    {
-        return javaScriptReference;
-    }
-
-    /**
-     * Sets the javascript reference
-     *
-     * @param javaScriptReference
-     */
-    @Override
-    public void setJavaScriptReference(JavascriptReference javaScriptReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-    }
-
-    /**
-     * Gets the cSS reference
-     *
-     * @return
-     */
-    @Override
-    public CSSReference getCssReference()
-    {
-        return cssReference;
-    }
-
-    /**
-     * Sets the CSS Reference
-     *
-     * @param cssReference
-     */
-    @Override
-    public void setCssReference(CSSReference cssReference)
-    {
-        this.cssReference = cssReference;
-    }
+	NyaReference(new JavascriptReference("nya", 1.0, "bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js"),
+	             new CSSReference("nya", 1.0, "bower_components/nya-bootstrap-select/dist/css/nya-bs-select.css")),
+	Nya4Reference(new JavascriptReference("nya4", 1.0, "bower_components/nya-bootstrap4-select/dist/js/nya-bs-select.js"),
+	              new CSSReference("nya4", 1.0, "bower_components/nya-bootstrap4-select/dist/css/nya-bs-select.css"));
+	/**
+	 * The actual javascript
+	 */
+	private JavascriptReference javaScriptReference;
+	/**
+	 * The actual css reference
+	 */
+	private CSSReference cssReference;
+	
+	/**
+	 * Constructs a reference pool
+	 */
+	NyaSelectReferencePool()
+	{
+	}
+	
+	/**
+	 * Constructs a new reference pool
+	 *
+	 * @param javaScriptReference
+	 * @param cssReference
+	 */
+	NyaSelectReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+		this.cssReference = cssReference;
+	}
+	
+	/**
+	 * Returns the javascript reference
+	 *
+	 * @return
+	 */
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+	
+	/**
+	 * Sets the javascript reference
+	 *
+	 * @param javaScriptReference
+	 */
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+	}
+	
+	/**
+	 * Gets the cSS reference
+	 *
+	 * @return
+	 */
+	@Override
+	public CSSReference getCssReference()
+	{
+		return cssReference;
+	}
+	
+	/**
+	 * Sets the CSS Reference
+	 *
+	 * @param cssReference
+	 */
+	@Override
+	public void setCssReference(CSSReference cssReference)
+	{
+		this.cssReference = cssReference;
+	}
 }

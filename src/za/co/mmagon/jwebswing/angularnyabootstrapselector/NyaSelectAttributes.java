@@ -19,51 +19,50 @@ package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 import za.co.mmagon.jwebswing.base.html.interfaces.AttributeDefinitions;
 
 /**
- *
  * @author GedMarc
  */
 public enum NyaSelectAttributes implements AttributeDefinitions
 {
-    Visibility;
-
-    private boolean isKeyword;
-
-    /**
-     * The component attributes
-     */
-    private NyaSelectAttributes()
-    {
-    }
-
-    /**
-     * If the attribute is loaded as a keyword only
-     *
-     * @param isKeyword
-     */
-    private NyaSelectAttributes(boolean isKeyword)
-    {
-        this.isKeyword = isKeyword;
-    }
-
-    /**
-     * If the attribute is a keyword
-     *
-     * @return
-     */
-    @Override
-    public boolean isKeyword()
-    {
-        return isKeyword;
-    }
-
-    /**
-     * Returns the attribute name replacing all underscores with dashes and all dollar signs to empty
-     *
-     * @return
-     */
-    @Override
-    public String toString()
-    {
-        return name().toLowerCase().replace('_', '-').replace("$", "");
-    }
+	Visibility;
+	
+	private boolean isKeyword;
+	
+	/**
+	 * The component attributes
+	 */
+	NyaSelectAttributes()
+	{
+	}
+	
+	/**
+	 * If the attribute is loaded as a keyword only
+	 *
+	 * @param isKeyword
+	 */
+	NyaSelectAttributes(boolean isKeyword)
+	{
+		this.isKeyword = isKeyword;
+	}
+	
+	/**
+	 * If the attribute is a keyword
+	 *
+	 * @return
+	 */
+	@Override
+	public boolean isKeyword()
+	{
+		return isKeyword;
+	}
+	
+	/**
+	 * Returns the attribute name replacing all underscores with dashes and all dollar signs to empty
+	 *
+	 * @return
+	 */
+	@Override
+	public String toString()
+	{
+		return name().toLowerCase().replace('_', '-').replace("$", "");
+	}
 }
