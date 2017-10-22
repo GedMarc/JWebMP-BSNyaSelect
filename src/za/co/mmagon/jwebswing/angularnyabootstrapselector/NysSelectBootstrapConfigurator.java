@@ -43,22 +43,21 @@ import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 )
 public class NysSelectBootstrapConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	public final String NyaSelectEnabled = "nyaselect-enabled";
-	
+
 	public NysSelectBootstrapConfigurator()
 	{
 		setSortOrder(160);
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			page.getAngular().getAngularModules().add(new NyaSelectAngularModule(page.getBody()));
-			
+			page.getAngular().getAngularModules().add(new NyaSelectAngularModule());
+
 			if (BootstrapPageConfigurator.isBootstrap4())
 			{
 				page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.Nya4Reference.getJavaScriptReference());
@@ -70,7 +69,7 @@ public class NysSelectBootstrapConfigurator extends PageConfigurator
 				page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
 			}
 		}
-		
+
 		return page;
 	}
 }

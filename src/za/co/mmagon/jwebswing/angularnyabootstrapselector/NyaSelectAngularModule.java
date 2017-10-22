@@ -16,7 +16,6 @@
  */
 package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
 
 /**
@@ -25,15 +24,15 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 public class NyaSelectAngularModule extends AngularModuleBase
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
-	public NyaSelectAngularModule(ComponentHierarchyBase page)
+
+	public NyaSelectAngularModule()
 	{
 		super("nya.bootstrap.select");
-		
+
 	}
-	
+
 	@Override
 	public String renderFunction()
 	{

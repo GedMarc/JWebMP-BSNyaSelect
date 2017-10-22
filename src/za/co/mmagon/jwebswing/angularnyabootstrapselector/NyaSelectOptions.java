@@ -17,7 +17,6 @@
 package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * All the options
@@ -25,32 +24,22 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  *
  * @author GedMarc
  * @version 1.0
- * <p>
- * <p>
+ * 		<p>
+ * 		<p>
  * @since Mar 4, 2015
  */
 public class NyaSelectOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
 	 * The options for the component
 	 */
 	public NyaSelectOptions()
 	{
-	
+		//Nothing Needed
 	}
-	
-	/**
-	 * Render as javascript
-	 *
-	 * @return
-	 */
-	@Override
-	public JavascriptPartType getJavascriptType()
-	{
-		return JavascriptPartType.Javascript;
-	}
+
 
 }

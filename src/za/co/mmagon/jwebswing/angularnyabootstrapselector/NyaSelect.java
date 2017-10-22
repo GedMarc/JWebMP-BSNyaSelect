@@ -40,6 +40,8 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 {
 	
 	private static final long serialVersionUID = 1L;
+
+	private static final String SelectedTextAttributeText = "selected-text-format";
 	
 	/**
 	 * Constructs a new instance
@@ -216,11 +218,11 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	{
 		if (selectedTextAsValue)
 		{
-			addAttribute("selected-text-format", "value");
+			addAttribute(SelectedTextAttributeText, "value");
 		}
 		else
 		{
-			getAttributes().remove("selected-text-format");
+			getAttributes().remove(SelectedTextAttributeText);
 		}
 		return this;
 	}
@@ -236,11 +238,11 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	{
 		if (selectedTextAsCount)
 		{
-			addAttribute("selected-text-format", "count");
+			addAttribute(SelectedTextAttributeText, "count");
 		}
 		else
 		{
-			getAttributes().remove("selected-text-format");
+			getAttributes().remove(SelectedTextAttributeText);
 		}
 		return this;
 	}
@@ -279,11 +281,11 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	{
 		if (selectedTextAsCount)
 		{
-			addAttribute("selected-text-format", "count>" + countThan);
+			addAttribute(SelectedTextAttributeText, "count>" + countThan);
 		}
 		else
 		{
-			getAttributes().remove("selected-text-format");
+			getAttributes().remove(SelectedTextAttributeText);
 		}
 		return this;
 	}
