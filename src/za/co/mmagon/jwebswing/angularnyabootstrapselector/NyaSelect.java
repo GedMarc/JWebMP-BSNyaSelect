@@ -38,11 +38,11 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
 public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect> implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
 {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	private static final String SelectedTextAttributeText = "selected-text-format";
-	
+
 	/**
 	 * Constructs a new instance
 	 * <p>
@@ -51,7 +51,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	{
 		this("data.nya");
 	}
-	
+
 	/**
 	 * Constructs a new instance
 	 *
@@ -66,7 +66,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		BootstrapPageConfigurator.setRequired(this, true);
 		AngularPageConfigurator.setRequired(this, true);
 	}
-	
+
 	/**
 	 * Sets this select option as multiple Binds as an array, make the dto object a List
 	 *
@@ -86,7 +86,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * Provide a input box to search through all option content only if live-search="true"
 	 *
@@ -106,7 +106,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * The control is considered valid if ngModel value is defined or not an empty array(for multiple)
 	 *
@@ -126,7 +126,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * if the expression is truthy, then the whole control will be disabled.
 	 *
@@ -146,7 +146,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * Sets max number which the dropdown-menu can show. if the number of options exceed the limit. an scrollbar will be shown.
 	 *
@@ -166,7 +166,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * provide a replacement for default text when nothing is selected.
 	 *
@@ -186,7 +186,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * Sets this select option as multiple Binds as an array, make the dto object a List
 	 *
@@ -206,7 +206,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * if sets to value, the dropdown-toggle button will show content user has selected, this is default value.
 	 *
@@ -226,7 +226,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * if sets to count, the dropdown-toggle button will show the number of options user has selected.
 	 *
@@ -246,7 +246,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
 	 * Show Menu Arrow
 	 * <p>
@@ -268,9 +268,9 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	/**
-	 * if sets to count>x, the dropdown-toggle button will show the number of user selected options when the number of options greater than x. otherwise, show the content.
+	 * if sets to count greater than x, the dropdown-toggle button will show the number of user selected options when the number of options greater than x. otherwise, show the content.
 	 *
 	 * @param selectedTextAsCount
 	 * @param countThan
@@ -289,7 +289,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return this;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj)
 	{
@@ -307,7 +307,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		}
 		return super.equals(obj);
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
