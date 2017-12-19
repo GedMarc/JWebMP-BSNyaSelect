@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,6 @@ package za.co.mmagon.jwebswing.angularnyabootstrapselector;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 
 /**
  * @author GedMarc
@@ -58,17 +57,8 @@ public class NysSelectBootstrapConfigurator extends PageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getAngular().getAngularModules().add(new NyaSelectAngularModule());
-
-			if (BootstrapPageConfigurator.isBootstrap4())
-			{
-				page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.Nya4Reference.getJavaScriptReference());
-				page.getBody().getCssReferences().add(NyaSelectReferencePool.Nya4Reference.getCssReference());
-			}
-			else
-			{
-				page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
-				page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
-			}
+			page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
+			page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
 		}
 
 		return page;
