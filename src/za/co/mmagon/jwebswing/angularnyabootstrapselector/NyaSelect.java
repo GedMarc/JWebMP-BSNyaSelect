@@ -20,7 +20,6 @@ import za.co.mmagon.jwebswing.base.angular.AngularAttributes;
 import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
 import za.co.mmagon.jwebswing.base.html.List;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.BootstrapPageConfigurator;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.BSFormChildren;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSFormGroupChildren;
 import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
@@ -63,7 +62,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 		addClass("nya-bs-select");
 		addAttribute(AngularAttributes.ngModel, bindingVariableName);
 		JQueryPageConfigurator.setRequired(true);
-		BootstrapPageConfigurator.setRequired(this, true);
+
 		AngularPageConfigurator.setRequired(true);
 	}
 
