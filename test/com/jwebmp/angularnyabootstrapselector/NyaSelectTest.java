@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,4 +14,31 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.jwebmp.angularnyabootstrapselector;
+
+import org.junit.jupiter.api.Test;
+
+/**
+ * @author GedMarc
+ */
+public class NyaSelectTest
+{
+
+	public NyaSelectTest()
+	{
+	}
+
+	@Test
+	public void testSetMultiple()
+	{
+		NyaSelect ns = new NyaSelect("asdf.asdf").add(new NyaSelectItem("asdf", "asdf", "asdf", "", ""));
+		System.out.println(ns.toString(true));
+	}
+
+}

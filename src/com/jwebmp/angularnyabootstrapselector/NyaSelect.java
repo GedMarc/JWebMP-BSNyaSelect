@@ -14,16 +14,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
+package com.jwebmp.angularnyabootstrapselector;
 
-import za.co.mmagon.jwebswing.base.angular.AngularAttributes;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.base.html.List;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.bootstrap.forms.BSFormChildren;
-import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.BSFormGroupChildren;
-import za.co.mmagon.jwebswing.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.base.angular.AngularAttributes;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.base.html.List;
+import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.plugins.bootstrap.forms.BSFormChildren;
+import com.jwebmp.plugins.bootstrap.forms.groups.BSFormGroupChildren;
+import com.jwebmp.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * An implementation of
@@ -33,9 +33,13 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
  * @version 1.0
  * @since 17 Jan 2017
  */
-@ComponentInformation(name = "Bootstrap Nya Select", description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
-		url = "http://nya.io/nya-bootstrap-select/#!/", wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
-public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect> implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
+@ComponentInformation(name = "Bootstrap Nya Select",
+		description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
+		url = "http://nya.io/nya-bootstrap-select/#!/",
+		wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
+public class NyaSelect
+		extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect>
+		implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
 {
 
 	private static final long serialVersionUID = 1L;
@@ -269,7 +273,8 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	}
 
 	/**
-	 * if sets to count greater than x, the dropdown-toggle button will show the number of user selected options when the number of options greater than x. otherwise, show the content.
+	 * if sets to count greater than x, the dropdown-toggle button will show the number of user selected options when the number of options greater than x. otherwise, show the
+	 * content.
 	 *
 	 * @param selectedTextAsCount
 	 * @param countThan
@@ -311,7 +316,7 @@ public class NyaSelect extends List<NyaSelectChildren, NyaSelectAttributes, NyaS
 	public int hashCode()
 	{
 		int hash = 7;
-		hash = 79 * hash + (this.getID().hashCode());
+		hash = 79 * hash + (getID().hashCode());
 		return hash;
 	}
 

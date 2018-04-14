@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
+package com.jwebmp.angularnyabootstrapselector;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
@@ -38,9 +38,9 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginIconUrl = "bower_components/nya-bootstrap-select/logo.png",
 		pluginIconImageUrl = "bower_components/nya-bootstrap-select/logo.png",
 		pluginLastUpdatedDate = "2017/03/04",
-		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/"
-)
-public class NysSelectBootstrapConfigurator extends PageConfigurator
+		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/")
+public class NysSelectBootstrapConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -56,9 +56,15 @@ public class NysSelectBootstrapConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			page.getAngular().getAngularModules().add(new NyaSelectAngularModule());
-			page.getBody().getJavascriptReferences().add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
-			page.getBody().getCssReferences().add(NyaSelectReferencePool.NyaReference.getCssReference());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new NyaSelectAngularModule());
+			page.getBody()
+			    .getJavascriptReferences()
+			    .add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
+			page.getBody()
+			    .getCssReferences()
+			    .add(NyaSelectReferencePool.NyaReference.getCssReference());
 		}
 
 		return page;

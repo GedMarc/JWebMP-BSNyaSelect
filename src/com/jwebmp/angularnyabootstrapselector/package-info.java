@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,32 +14,4 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
-
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-
-/**
- * All the options
- * <p>
- *
- * @author GedMarc
- * @version 1.0
- * 		<p>
- * 		<p>
- * @since Mar 4, 2015
- */
-public class NyaSelectOptions extends JavaScriptPart
-{
-
-	private static final long serialVersionUID = 1L;
-
-	/**
-	 * The options for the component
-	 */
-	public NyaSelectOptions()
-	{
-		//Nothing Needed
-	}
-
-
-}
+package com.jwebmp.angularnyabootstrapselector;

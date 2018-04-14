@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,16 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
+package com.jwebmp.angularnyabootstrapselector;
 
-import za.co.mmagon.jwebswing.base.html.*;
-import za.co.mmagon.jwebswing.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
+import com.jwebmp.base.html.*;
+import com.jwebmp.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
 
 /**
  * @author GedMarc
  * @since 04 Feb 2017
  */
-public class NyaSelectItem extends ListItem implements NyaSelectChildren
+public class NyaSelectItem
+		extends ListItem
+		implements NyaSelectChildren
 {
 
 	private static final long serialVersionUID = 1L;
@@ -45,72 +47,6 @@ public class NyaSelectItem extends ListItem implements NyaSelectChildren
 		this.iconClass = iconClass;
 		this.value = value;
 		this.checkClass = checkClass;
-		this.subText = subText;
-	}
-
-	public String getLabel()
-	{
-		return label;
-	}
-
-	public NyaSelectItem setLabel(String label)
-	{
-		this.label = label;
-		return this;
-	}
-
-	public String getText()
-	{
-		return text;
-	}
-
-	@Override
-	public NyaSelectItem setText(String text)
-	{
-		this.text = text;
-		return this;
-	}
-
-	public String getIconClass()
-	{
-		return iconClass;
-	}
-
-	public NyaSelectItem setIconClass(String iconClass)
-	{
-		this.iconClass = iconClass;
-		return this;
-	}
-
-	public String getValue()
-	{
-		return value;
-	}
-
-	public NyaSelectItem setValue(String value)
-	{
-		this.value = value;
-		return this;
-	}
-
-	public String getCheckClass()
-	{
-		return checkClass;
-	}
-
-	public NyaSelectItem setCheckClass(String checkClass)
-	{
-		this.checkClass = checkClass;
-		return this;
-	}
-
-	public String getSubText()
-	{
-		return subText;
-	}
-
-	public void setSubText(String subText)
-	{
 		this.subText = subText;
 	}
 
@@ -156,6 +92,49 @@ public class NyaSelectItem extends ListItem implements NyaSelectChildren
 			}
 		}
 		super.preConfigure();
+	}
+
+	public String getIconClass()
+	{
+		return iconClass;
+	}
+
+	public NyaSelectItem setIconClass(String iconClass)
+	{
+		this.iconClass = iconClass;
+		return this;
+	}
+
+	public String getSubText()
+	{
+		return subText;
+	}
+
+	public void setSubText(String subText)
+	{
+		this.subText = subText;
+	}
+
+	public String getValue()
+	{
+		return value;
+	}
+
+	public NyaSelectItem setValue(String value)
+	{
+		this.value = value;
+		return this;
+	}
+
+	public String getCheckClass()
+	{
+		return checkClass;
+	}
+
+	public NyaSelectItem setCheckClass(String checkClass)
+	{
+		this.checkClass = checkClass;
+		return this;
 	}
 
 	@Override
@@ -211,4 +190,31 @@ public class NyaSelectItem extends ListItem implements NyaSelectChildren
 		result = 31 * result + (getSubText() != null ? getSubText().hashCode() : 0);
 		return result;
 	}
+
+	public String getLabel()
+	{
+		return label;
+	}
+
+	public NyaSelectItem setLabel(String label)
+	{
+		this.label = label;
+		return this;
+	}
+
+	@Override
+	public String getText()
+	{
+		return text;
+	}
+
+
+	@Override
+	public NyaSelectItem setText(String text)
+	{
+		this.text = text;
+		return this;
+	}
+
+
 }

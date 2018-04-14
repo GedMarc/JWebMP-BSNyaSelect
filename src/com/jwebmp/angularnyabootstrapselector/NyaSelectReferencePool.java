@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.angularnyabootstrapselector;
+package com.jwebmp.angularnyabootstrapselector;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.base.servlets.interfaces.ReferencePool;
 
 /**
  * Default reference pool structure
@@ -59,28 +59,6 @@ public enum NyaSelectReferencePool implements ReferencePool
 	}
 
 	/**
-	 * Returns the javascript reference
-	 *
-	 * @return
-	 */
-	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-
-	/**
-	 * Sets the javascript reference
-	 *
-	 * @param javaScriptReference
-	 */
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-
-	/**
 	 * Gets the cSS reference
 	 *
 	 * @return
@@ -100,5 +78,27 @@ public enum NyaSelectReferencePool implements ReferencePool
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	/**
+	 * Returns the javascript reference
+	 *
+	 * @return
+	 */
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	/**
+	 * Sets the javascript reference
+	 *
+	 * @param javaScriptReference
+	 */
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 }
