@@ -14,18 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.angularnyabootstrapselector;
+package com.jwebmp.plugins.angularnyabootstrapselector;
 
-import com.jwebmp.base.html.interfaces.GlobalChildren;
-import com.jwebmp.base.html.interfaces.children.ListChildren;
+import com.jwebmp.base.html.interfaces.events.GlobalEvents;
 
 /**
  * @author Marc Magon
  * @version 1.0
  * @since 07 Aug 2015
  */
-public interface NyaSelectChildren
-		extends GlobalChildren, ListChildren
+public interface NyaSelectEvents
+		extends GlobalEvents
 {
 
 }

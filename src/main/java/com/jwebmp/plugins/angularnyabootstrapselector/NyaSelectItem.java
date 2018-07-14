@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.angularnyabootstrapselector;
+package com.jwebmp.plugins.angularnyabootstrapselector;
 
 import com.jwebmp.base.html.*;
 import com.jwebmp.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
@@ -208,13 +208,11 @@ public class NyaSelectItem
 		return text;
 	}
 
-
 	@Override
 	public NyaSelectItem setText(String text)
 	{
 		this.text = text;
 		return this;
 	}
-
 
 }

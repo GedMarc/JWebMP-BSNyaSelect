@@ -1,4 +1,4 @@
-package com.jwebmp.angularnyabootstrapselector;
+package com.jwebmp.plugins.angularnyabootstrapselector;
 
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;

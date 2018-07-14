@@ -14,17 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.angularnyabootstrapselector;
+package com.jwebmp.plugins.angularnyabootstrapselector;
 
-import com.jwebmp.base.html.interfaces.events.GlobalEvents;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
 
 /**
- * @author Marc Magon
+ * All the options
+ * <p>
+ *
+ * @author GedMarc
  * @version 1.0
- * @since 07 Aug 2015
+ * 		<p>
+ * 		<p>
+ * @since Mar 4, 2015
  */
-public interface NyaSelectEvents
-		extends GlobalEvents
+public class NyaSelectOptions
+		extends JavaScriptPart
 {
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * The options for the component
+	 */
+	public NyaSelectOptions()
+	{
+		//Nothing Needed
+	}
 
 }

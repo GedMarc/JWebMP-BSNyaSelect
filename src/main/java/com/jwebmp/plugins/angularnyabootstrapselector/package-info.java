@@ -14,29 +14,4 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.angularnyabootstrapselector;
-
-import com.jwebmp.base.angular.modules.AngularModuleBase;
-
-/**
- * @author GedMarc
- * @since 27 Jan 2017
- */
-public class NyaSelectAngularModule
-		extends AngularModuleBase
-{
-
-	private static final long serialVersionUID = 1L;
-
-	public NyaSelectAngularModule()
-	{
-		super("nya.bootstrap.select");
-
-	}
-
-	@Override
-	public String renderFunction()
-	{
-		return "";
-	}
-}
+package com.jwebmp.plugins.angularnyabootstrapselector;
