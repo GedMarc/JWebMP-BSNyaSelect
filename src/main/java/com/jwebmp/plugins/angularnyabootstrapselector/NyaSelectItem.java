@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.angularnyabootstrapselector;
 
-import com.jwebmp.base.html.*;
+import com.jwebmp.core.base.html.*;
 import com.jwebmp.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
 
 /**

@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.angularnyabootstrapselector;
 
-import com.jwebmp.base.angular.modules.AngularModuleBase;
+import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 
 /**
  * @author GedMarc
