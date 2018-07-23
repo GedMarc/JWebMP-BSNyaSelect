@@ -17,6 +17,7 @@
 package com.jwebmp.plugins.angularnyabootstrapselector;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
+import com.jwebmp.core.base.angular.services.IAngularModule;
 
 /**
  * @author GedMarc
@@ -24,6 +25,7 @@ import com.jwebmp.core.base.angular.modules.AngularModuleBase;
  */
 public class NyaSelectAngularModule
 		extends AngularModuleBase
+		implements IAngularModule<NyaSelectAngularModule>
 {
 
 	private static final long serialVersionUID = 1L;

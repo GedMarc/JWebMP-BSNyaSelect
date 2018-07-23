@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.angularnyabootstrapselector;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author GedMarc
@@ -40,14 +40,17 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginLastUpdatedDate = "2017/03/04",
 		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/")
 public class NysSelectBootstrapConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	public NysSelectBootstrapConfigurator()
 	{
-		setSortOrder(160);
+		//No config required
+	}
+
+	@Override
+	public Integer sortOrder()
+	{
+		return 160;
 	}
 
 	@Override
@@ -56,9 +59,6 @@ public class NysSelectBootstrapConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new NyaSelectAngularModule());
 			page.getBody()
 			    .getJavascriptReferences()
 			    .add(NyaSelectReferencePool.NyaReference.getJavaScriptReference());
