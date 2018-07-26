@@ -15,4 +15,5 @@ module com.jwebmp.plugins.angularnyabootstrapselector {
 	provides IPageConfigurator with com.jwebmp.plugins.angularnyabootstrapselector.NysSelectBootstrapConfigurator;
 	provides IAngularModule with NyaSelectAngularModule;
 
+	opens com.jwebmp.plugins.angularnyabootstrapselector to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
