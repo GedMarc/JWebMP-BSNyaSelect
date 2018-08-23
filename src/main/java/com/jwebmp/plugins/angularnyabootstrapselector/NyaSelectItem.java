@@ -19,6 +19,8 @@ package com.jwebmp.plugins.angularnyabootstrapselector;
 import com.jwebmp.core.base.html.*;
 import com.jwebmp.plugins.bootstrap.dropdown.BSComponentDropDownOptions;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author GedMarc
  * @since 04 Feb 2017
@@ -138,6 +140,19 @@ public class NyaSelectItem
 	}
 
 	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + (getLabel() != null ? getLabel().hashCode() : 0);
+		result = 31 * result + (getText() != null ? getText().hashCode() : 0);
+		result = 31 * result + (getIconClass() != null ? getIconClass().hashCode() : 0);
+		result = 31 * result + (getValue() != null ? getValue().hashCode() : 0);
+		result = 31 * result + (getCheckClass() != null ? getCheckClass().hashCode() : 0);
+		result = 31 * result + (getSubText() != null ? getSubText().hashCode() : 0);
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -178,19 +193,6 @@ public class NyaSelectItem
 		return getSubText() != null ? getSubText().equals(that.getSubText()) : that.getSubText() == null;
 	}
 
-	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + (getLabel() != null ? getLabel().hashCode() : 0);
-		result = 31 * result + (getText() != null ? getText().hashCode() : 0);
-		result = 31 * result + (getIconClass() != null ? getIconClass().hashCode() : 0);
-		result = 31 * result + (getValue() != null ? getValue().hashCode() : 0);
-		result = 31 * result + (getCheckClass() != null ? getCheckClass().hashCode() : 0);
-		result = 31 * result + (getSubText() != null ? getSubText().hashCode() : 0);
-		return result;
-	}
-
 	public String getLabel()
 	{
 		return label;
@@ -208,6 +210,7 @@ public class NyaSelectItem
 		return text;
 	}
 
+	@NotNull
 	@Override
 	public NyaSelectItem setText(String text)
 	{

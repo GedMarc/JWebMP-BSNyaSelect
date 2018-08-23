@@ -37,7 +37,7 @@ public class NyaSelectTest
 	@Test
 	public void testSetMultiple()
 	{
-		NyaSelect ns = new NyaSelect("asdf.asdf").add(new NyaSelectItem("asdf", "asdf", "asdf", "", ""));
+		NyaSelect ns = new NyaSelect<>("asdf.asdf").add(new NyaSelectItem("asdf", "asdf", "asdf", "", ""));
 		System.out.println(ns.toString(true));
 	}
 

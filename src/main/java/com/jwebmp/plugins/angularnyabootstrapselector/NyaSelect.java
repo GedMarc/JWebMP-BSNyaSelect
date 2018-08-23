@@ -37,9 +37,9 @@ import com.jwebmp.plugins.bootstrap.forms.groups.sets.BSFormSetChildren;
 		description = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS ",
 		url = "http://nya.io/nya-bootstrap-select/#!/",
 		wikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki")
-public class NyaSelect
-		extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, NyaSelect>
-		implements BSFormChildren, BSFormGroupChildren, BSFormSetChildren
+public class NyaSelect<J extends NyaSelect<J>>
+		extends List<NyaSelectChildren, NyaSelectAttributes, NyaSelectEvents, J>
+		implements BSFormChildren<NyaSelectChildren, J>, BSFormGroupChildren<NyaSelectChildren, J>, BSFormSetChildren<NyaSelectChildren, J>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -221,11 +221,11 @@ public class NyaSelect
 	{
 		if (selectedTextAsValue)
 		{
-			addAttribute(SelectedTextAttributeText, "value");
+			addAttribute(NyaSelect.SelectedTextAttributeText, "value");
 		}
 		else
 		{
-			getAttributes().remove(SelectedTextAttributeText);
+			getAttributes().remove(NyaSelect.SelectedTextAttributeText);
 		}
 		return this;
 	}
@@ -241,11 +241,11 @@ public class NyaSelect
 	{
 		if (selectedTextAsCount)
 		{
-			addAttribute(SelectedTextAttributeText, "count");
+			addAttribute(NyaSelect.SelectedTextAttributeText, "count");
 		}
 		else
 		{
-			getAttributes().remove(SelectedTextAttributeText);
+			getAttributes().remove(NyaSelect.SelectedTextAttributeText);
 		}
 		return this;
 	}
@@ -285,39 +285,24 @@ public class NyaSelect
 	{
 		if (selectedTextAsCount)
 		{
-			addAttribute(SelectedTextAttributeText, "count>" + countThan);
+			addAttribute(NyaSelect.SelectedTextAttributeText, "count>" + countThan);
 		}
 		else
 		{
-			getAttributes().remove(SelectedTextAttributeText);
+			getAttributes().remove(NyaSelect.SelectedTextAttributeText);
 		}
 		return this;
 	}
 
 	@Override
-	public boolean equals(Object obj)
+	public int hashCode()
 	{
-		if (this == obj)
-		{
-			return true;
-		}
-		if (obj == null)
-		{
-			return false;
-		}
-		if (getClass() != obj.getClass())
-		{
-			return false;
-		}
-		return super.equals(obj);
+		return super.hashCode();
 	}
 
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		int hash = 7;
-		hash = 79 * hash + (getID().hashCode());
-		return hash;
+		return super.equals(o);
 	}
-
 }
