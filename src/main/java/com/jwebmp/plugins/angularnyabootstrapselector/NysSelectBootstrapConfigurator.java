@@ -44,15 +44,39 @@ import javax.validation.constraints.NotNull;
 public class NysSelectBootstrapConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	public NysSelectBootstrapConfigurator()
 	{
 		//No config required
 	}
 
-	@Override
-	public Integer sortOrder()
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
 	{
-		return 160;
+		return NysSelectBootstrapConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		NysSelectBootstrapConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -71,5 +95,17 @@ public class NysSelectBootstrapConfigurator
 		}
 
 		return page;
+	}
+
+	@Override
+	public Integer sortOrder()
+	{
+		return 160;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return NysSelectBootstrapConfigurator.enabled;
 	}
 }
