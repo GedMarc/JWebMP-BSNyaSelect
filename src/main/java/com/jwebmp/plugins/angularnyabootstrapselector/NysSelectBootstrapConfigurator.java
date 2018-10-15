@@ -33,16 +33,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "jquery,bootstrap,angular",
 		pluginCategories = "bootstrap,web ui,ui,framework,select",
 		pluginSubtitle = "An Bootstrap dropdown component and replacement of vanilla select element, designed for AngularJS",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-BSNyaSelect",
 		pluginSourceUrl = "https://github.com/lordfriend/nya-bootstrap-select",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-BSNyaSelect/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-BSNyaSelect/wiki",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/BSNyaSelect.jar/download",
 		pluginIconUrl = "bower_components/nya-bootstrap-select/logo.png",
 		pluginIconImageUrl = "bower_components/nya-bootstrap-select/logo.png",
 		pluginLastUpdatedDate = "2017/03/04",
 		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/")
 public class NysSelectBootstrapConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<NysSelectBootstrapConfigurator>
 {
 	/**
 	 * If this configurator is enabled
@@ -98,14 +98,14 @@ public class NysSelectBootstrapConfigurator
 	}
 
 	@Override
-	public Integer sortOrder()
-	{
-		return 160;
-	}
-
-	@Override
 	public boolean enabled()
 	{
 		return NysSelectBootstrapConfigurator.enabled;
+	}
+
+	@Override
+	public Integer sortOrder()
+	{
+		return 160;
 	}
 }
