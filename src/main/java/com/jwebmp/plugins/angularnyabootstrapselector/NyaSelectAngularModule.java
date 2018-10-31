@@ -28,7 +28,6 @@ public class NyaSelectAngularModule
 		implements IAngularModule<NyaSelectAngularModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public NyaSelectAngularModule()
 	{

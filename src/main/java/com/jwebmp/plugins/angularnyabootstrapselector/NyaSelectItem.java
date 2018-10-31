@@ -30,7 +30,6 @@ public class NyaSelectItem
 		implements NyaSelectChildren
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private String label;
 	private String text;

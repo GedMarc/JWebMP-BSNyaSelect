@@ -42,7 +42,6 @@ public class NyaSelect<J extends NyaSelect<J>>
 		implements BSFormChildren<NyaSelectChildren, J>, BSFormGroupChildren<NyaSelectChildren, J>, BSFormSetChildren<NyaSelectChildren, J>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private static final String SelectedTextAttributeText = "selected-text-format";
 
