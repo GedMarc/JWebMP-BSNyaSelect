@@ -41,15 +41,15 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "bower_components/nya-bootstrap-select/logo.png",
 		pluginLastUpdatedDate = "2017/03/04",
 		pluginOriginalHomepage = "http://nya.io/nya-bootstrap-select/#!/")
-public class NysSelectBootstrapConfigurator
-		implements IPageConfigurator<NysSelectBootstrapConfigurator>
+public class NyaSelectPageConfigurator
+		implements IPageConfigurator<NyaSelectPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
 
-	public NysSelectBootstrapConfigurator()
+	public NyaSelectPageConfigurator()
 	{
 		//No config required
 	}
@@ -63,7 +63,7 @@ public class NysSelectBootstrapConfigurator
 	 */
 	public static boolean isEnabled()
 	{
-		return NysSelectBootstrapConfigurator.enabled;
+		return NyaSelectPageConfigurator.enabled;
 	}
 
 	/**
@@ -76,7 +76,7 @@ public class NysSelectBootstrapConfigurator
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
-		NysSelectBootstrapConfigurator.enabled = mustEnable;
+		NyaSelectPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -100,7 +100,7 @@ public class NysSelectBootstrapConfigurator
 	@Override
 	public boolean enabled()
 	{
-		return NysSelectBootstrapConfigurator.enabled;
+		return NyaSelectPageConfigurator.enabled;
 	}
 
 	@Override
