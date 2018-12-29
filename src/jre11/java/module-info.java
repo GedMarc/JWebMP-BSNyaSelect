@@ -16,6 +16,7 @@ module com.jwebmp.plugins.angularnyabootstrapselector {
 	requires java.validation;
 	requires com.jwebmp.plugins.bootstrap;
 	requires com.jwebmp.guicedinjection;
+	requires com.jwebmp.core.angularjs;
 
 	provides IPageConfigurator with NyaSelectPageConfigurator;
 	provides IAngularModule with NyaSelectAngularModule;

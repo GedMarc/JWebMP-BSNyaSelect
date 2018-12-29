@@ -63,7 +63,7 @@ public class NyaSelect<J extends NyaSelect<J>>
 	{
 		super(true);
 		addClass("nya-bs-select");
-		addAttribute(AngularAttributes.ngModel, bindingVariableName);
+		addAttribute(AngularAttributes.ngModel.getAttributeName(), bindingVariableName);
 		JQueryPageConfigurator.setRequired(true);
 
 		AngularPageConfigurator.setRequired(true);

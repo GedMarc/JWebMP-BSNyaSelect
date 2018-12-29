@@ -17,15 +17,13 @@
 package com.jwebmp.plugins.angularnyabootstrapselector;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
-import com.jwebmp.core.base.angular.services.IAngularModule;
 
 /**
  * @author GedMarc
  * @since 27 Jan 2017
  */
 public class NyaSelectAngularModule
-		extends AngularModuleBase
-		implements IAngularModule<NyaSelectAngularModule>
+		extends AngularModuleBase<NyaSelectAngularModule>
 {
 
 
